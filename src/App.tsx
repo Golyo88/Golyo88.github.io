@@ -40,7 +40,7 @@ function App() {
           {
             title: 'Senior Software Engineer',
             company: 'Prerender',
-            companyWebSite: 'https:/prerender.io',
+            companyWebSite: 'https://prerender.io',
             datesBetween: '2021.04 - Present',
             descriptionTags: ['Nodejs', 'Typescript', 'React'],
           },
