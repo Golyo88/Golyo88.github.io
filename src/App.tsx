@@ -46,6 +46,28 @@ function App() {
           icon: 'tasks',
           groups: [
             {
+              sectionHeader: 'super.ai',
+              // eslint-disable-next-line max-len
+              description: 'Generative AI for Documents. Super.AI breaks down complex documents into smaller components, then leverages the best AI, human, and software worker to process each.',
+              items: [
+                { title: 'super.ai',
+                  projectUrl: 'https://super.ai',
+                  description: <ProjectDescription
+                  // eslint-disable-next-line max-len
+                    description="I am responsible for designing and implementing new features e2e. I'm owning a big part of the backend services where my responsibility is to make sure that the system is scalable, fault tolerant and fast."
+                    sections={[
+                      { title: 'Frontend', technologies: ['React', 'Typescript', 'HTML', 'CSS'] },
+                      { title: 'Backend', technologies: ['Java', 'Python'] },
+                      { title: 'Platform', technologies: ['AWS', 'Azure'] },
+                      { title: 'Database', technologies: ['Postgres', 'Dynamo'] },
+                      { title: 'Cache', technologies: ['Redis'] },
+                      { title: 'Other', technologies: ['Docker, Kubernetes'] },
+                    ]}
+                  />,
+                },
+              ],
+            },
+            {
               sectionHeader: 'Prerender.io',
               // eslint-disable-next-line max-len
               description: 'Prerendering your website to get a better ranking with search engines. Prerender helps websites get higher ranks in search engines. We render all of the pages of our customers and store it in our cache so when a bot requests a page the response comes from us. We serve it from the cache faster and we serve a static HTML. Bots like static HTMLs and fast responses...',
@@ -54,7 +76,7 @@ function App() {
                   projectUrl: 'https://prerender.io',
                   description: <ProjectDescription
                   // eslint-disable-next-line max-len
-                    description="I am one of the three engineers doing all the work. Frontend, backend, monitoring, testing, customer success, etc. I'm responsible to discover new features and then design, implement, test, deploy those in small iterative steps. This is a fully scalable system. The system currently renders couple billion of pages every day."
+                    description="I was one of the three engineers doing all the work. Frontend, backend, monitoring, testing, customer success, etc. I'm responsible to discover new features and then design, implement, test, deploy those in small iterative steps. This is a fully scalable, distributed system. The system currently renders couple billion of pages every day."
                     sections={[
                       { title: 'Frontend', technologies: ['React', 'HTML', 'CSS'] },
                       { title: 'Backend', technologies: ['NodeJs', 'Typescript', 'express', 'tsedio'] },
@@ -76,7 +98,7 @@ function App() {
                   projectUrl: 'https://vimeo.com/328850686',
                   description: <ProjectDescription
                   // eslint-disable-next-line max-len
-                    description="I was responsible to design a fast, fault tolerant, life saver system with the following requirements: In case of an accident we had to ask the driver if they are OK or not. If the response didn't arrive in 60 seconds we had to call for help to the location of the accident. After the design I was part of the team which implemented it. The teams responsibility was to implement new features, fix bugs, test and deploy the system. We were working on AWS. We used step functions, lambdas, dynamodb, sqs, sns to make this happen. After that I was responsible to design the reporting system for these accidents. And we implemented it with the same team."
+                    description="I was responsible to design a fast, fault tolerant, distributed, life saver system which does the following: In case of an accident we had to ask the driver if they are OK or not. If the response didn't arrive in 60 seconds we had to call for help to the location of the accident. After the design I was part of the team which implemented it. The team's responsibility was to implement new features, fix bugs, test and deploy the system. We were working on AWS. We used step functions, lambdas, dynamodb, sqs, sns to make this happen. After that I was responsible to design the reporting system for these accidents. And we implemented it with the same team."
                     sections={[
                       { title: 'Backend', technologies: ['Python', 'FastAPI', 'Flask', 'Alchemy'] },
                       { title: 'Platform', technologies: ['AWS'] },
@@ -91,7 +113,7 @@ function App() {
                 { title: <b>TrueView</b>,
                   description: <ProjectDescription
                   // eslint-disable-next-line max-len
-                    description="Backoffice for the adjusters. The company's customers were the insurance companies. Their agents were doing a lot of manual work with really old tools when an insurance claim got onto their table. It was very unpleasent for the agent and it was even worse for the driver. So we wanted to make that process better for both parties. I was responsible to create a fast python webserver which could handle all the agents of the insurance company."
+                    description="Backoffice for the adjusters. The company's customers were the insurance companies. Their agents were doing a lot of manual work with really old tools when an insurance claim got onto their table. It was very unpleasent for the agent and it was even worse for the driver. So we wanted to make that process better for both parties. I was responsible to create a scalable, distributed system which integrates into the other parts of the company."
                     sections={[
                       { title: 'Frontend', technologies: ['Angular', 'HTML', 'CSS'] },
                       { title: 'Backend', technologies: ['Python', 'FastAPI', 'Flask', 'Alchemy'] },
@@ -171,10 +193,17 @@ function App() {
           icon: 'archive',
           items: [
             {
+              title: 'Full Stack Engineer',
+              company: 'super.ai',
+              companyWebSite: 'https://super.ai',
+              datesBetween: '2022.12 - Present',
+              descriptionTags: ['Java', 'Python', 'React', 'Typescript', 'AWS'],
+            },
+            {
               title: 'Senior Software Engineer',
               company: 'Prerender',
               companyWebSite: 'https://prerender.io',
-              datesBetween: '2021.04 - Present',
+              datesBetween: '2021.04 - 2022.11',
               descriptionTags: ['Nodejs', 'Typescript', 'React'],
             },
             {
