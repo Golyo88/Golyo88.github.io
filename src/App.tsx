@@ -14,7 +14,7 @@ function App() {
         image,
         contacts: [
           { type: 'email', value: 'nandor.borics@gmail.com' },
-          { type: 'location', value: 'Budapest, Hungary' },
+          { type: 'location', value: 'Munich area, Germany' },
           { type: 'linkedin',
             value: <a
               href="https://www.linkedin.com/in/n%C3%A1ndor-borics-76a37542"
@@ -25,7 +25,7 @@ function App() {
               {/* eslint-disable-next-line react/jsx-indent */}
                    </a>,
           },
-          { type: 'github', value: <a href="github.com/Golyo88" target="_blank">Github</a> },
+          { type: 'github', value: <a href="https://github.com/golyo88" target="_blank" rel="noreferrer">Github</a> },
         ] }}
       sections={[
         {
